@@ -1,0 +1,7 @@
+Ported from Remy Sharp's 'ify' javascript function; see:
+http://code.google.com/p/twitterjs/source/browse/trunk/src/ify.js
+
+Very little has changed; Remy's regular expressions do all the real work and
+have been included verbatim. The only changes are according to the syntax and
+functional differences between javascript and PHP, so this script /should/ work
+in exactly the same way as the original.
