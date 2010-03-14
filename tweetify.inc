@@ -4,6 +4,9 @@
  *
  * Ported from Remy Sharp's 'ify' javascript function; see:
  * http://code.google.com/p/twitterjs/source/browse/trunk/src/ify.js
+ *
+ * Based on revision 46:
+ * http://code.google.com/p/twitterjs/source/detail?spec=svn46&r=46
  */
 
 
@@ -32,7 +35,7 @@ function clean_tweet($tweet)
  */
 function parse_tweet_link($m)
 {
-	return '<a href="'.$m[0].'">'.(($m[0].length > 25) ? $m[0].substr(0, 24).'...' : $m[0]).'</a>';
+	return '<a href="'.$m[0].'">'.((strlen($m[0]) > 25) ? substr($m[0], 0, 24).'...' : $m[0]).'</a>';
 }
 
 /*
